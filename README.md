@@ -1,8 +1,8 @@
-# ASAN VMS - Müraciət Sistemi
+# ASAN VMS - Application System
 
-Vətəndaş müraciətlərinin idarə edilməsi üçün tam funksional veb tətbiqi. Sİ (Gemini) ilə avtomatik təhlil, şəkil yükləmə, EXIF məkan çıxarma və admin yoxlama sistemi daxildir.
+A fully functional web application for managing citizen applications. Includes AI (Gemini)-powered automatic analysis, image upload, EXIF location extraction, and an admin verification system.
 
-## Layihə Strukturu
+## Project Structure
 
 ```
 aiasan/
@@ -11,13 +11,13 @@ aiasan/
 └── user/       # React (Vite) - Vətəndaş paneli
 ```
 
-## Texnologiyalar
+## Technologies
 
 - **Backend:** Node.js, Express, MongoDB, Mongoose, Gemini AI
 - **Frontend:** React, Vite, Tailwind CSS, Axios, Lucide Icons
 - **Digər:** JWT Authentication, EXIF GPS extraction, Multer file upload
 
-## Quraşdırma
+## Installation
 
 ### 1. Backend
 ```bash
@@ -44,7 +44,7 @@ npm install
 npm run dev
 ```
 
-### 3. Vətəndaş Paneli
+### 3. Citizen Dashboard
 ```bash
 cd user
 npm install
@@ -53,10 +53,10 @@ npm run dev
 
 ## Əsas Xüsusiyyətlər
 
-- 📸 Şəkil yükləmə və kamera ilə çəkmə
-- 🤖 Gemini Sİ ilə avtomatik kateqoriya, prioritet və təsvir
-- 📍 EXIF-dən GPS məkan çıxarma
-- 👨‍💼 Admin paneli: müraciətlərin idarəsi, redaktəsi, yoxlanması
-- ✅ Həll yoxlama sistemi (Sİ ilə müqayisə)
-- ❌ Rədd etmə sistemi (səbəb ilə)
-- 🌐 Tam Azərbaycan dili dəstəyi
+- 📸 Image upload and camera capture
+- 🤖 Automatic category, priority, and description generation using Gemini AI
+- 📍 GPS extraction from EXIF metadata
+- 👨‍💼 Admin panel for request management, editing, and verification
+- ✅ Resolution verification system (AI-based comparison)
+- ❌ Rejection system with reason tracking
+- 🌐 Full Azerbaijani language support
